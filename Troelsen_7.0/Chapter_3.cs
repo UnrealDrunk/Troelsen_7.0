@@ -19,8 +19,8 @@ namespace Troelsen_7._0
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> System.Object Functionality \n");
 
-            // A C# int is really a shorthand for System.Int32,
-            // which inherits the following members from System.Object
+            // C # int на самом деле является сокращением для System.Int32,
+            // который наследует следующие члены из System.Object.
 
             Console.WriteLine("12.GetHashCode() = {0}", 12.GetHashCode());
             Console.WriteLine("12.Equals(23) = {0}", 12.Equals(23));
