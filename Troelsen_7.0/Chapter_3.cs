@@ -96,6 +96,31 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонтстрация работы метода TryParse
+        /// </summary>
+        public void ParseFromStringsWithTryParse()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> Data types parsing with TryParse: ");
+            if (bool.TryParse("True", out bool b))
+            {
+                Console.WriteLine("Value of b: {0}", b);
+            }
+
+            string value = "Hello";
+            if (double.TryParse(value, out double d))
+            {
+                Console.WriteLine("Value of d: {0}", d);
+
+            }
+            else
+            {
+                Console.WriteLine("Failed to convert the input ({0}) to a double", value);
+            }
+            Console.WriteLine();
+        }
+
 
 
     }
