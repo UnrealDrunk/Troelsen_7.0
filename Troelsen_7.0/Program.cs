@@ -19,6 +19,7 @@ namespace Troelsen_7._0
             chapter_3.CharFunctionality();
             chapter_3.ParseFromStrings();
             chapter_3.ParseFromStringsWithTryParse();
+            chapter_3.UseDatesAndTimes();
 
             //
 

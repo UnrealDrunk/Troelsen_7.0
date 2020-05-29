@@ -122,6 +122,31 @@ namespace Troelsen_7._0
         }
 
 
+        /// <summary>
+        /// Демонстрация методов обработки даты и времени
+        /// </summary>
+        public void UseDatesAndTimes()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> Dates and times");
+
+            //Конструктор принимает парметры - (год, месяц, дата)
+            DateTime dt = new DateTime(2015, 10, 17);
+
+            //Какой сейчас день недели?
+            Console.WriteLine("The day of {0} is {1}", dt.Date, dt.DayOfWeek);
+
+            //Добавляем ещё 2 месяца к текущей дате и получается, что текущий месяц - Декабрь
+            dt.AddMonths(2);
+            Console.WriteLine("Daylight savings: {0}", dt.IsDaylightSavingTime());
+
+            //Конструктор принимает парметры - (часы, мниуты, секунды)
+            TimeSpan ts = new TimeSpan(4, 30, 0);
+            Console.WriteLine(ts);
+
+            // Вычитаем 15 минут из текущего времени и выводим результат на экран
+            Console.WriteLine(ts.Subtract(new TimeSpan(0, 15, 0)));
+        }
 
     }
 }
