@@ -17,6 +17,7 @@ namespace Troelsen_7._0
             chapter.DataTypeFunctionality();
             chapter.MembersOfSystemBolean();
             chapter.CharFunctionality();
+            chapter.ParseFromStrings();
 
             //
 
