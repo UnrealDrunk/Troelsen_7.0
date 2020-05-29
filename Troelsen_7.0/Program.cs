@@ -20,6 +20,7 @@ namespace Troelsen_7._0
             chapter_3.ParseFromStrings();
             chapter_3.ParseFromStringsWithTryParse();
             chapter_3.UseDatesAndTimes();
+            chapter_3.UseBigIntegers();
 
             //
 

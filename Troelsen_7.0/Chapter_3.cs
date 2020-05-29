@@ -147,6 +147,24 @@ namespace Troelsen_7._0
 
             // Вычитаем 15 минут из текущего времени и выводим результат на экран
             Console.WriteLine(ts.Subtract(new TimeSpan(0, 15, 0)));
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Демонтрация работы с классом огромных чисел - BigInteger
+        /// </summary>
+        public void UseBigIntegers()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> Use BigInteger");
+            BigInteger biggy = BigInteger.Parse("9999999999999999999999999999999999999999999999");
+            Console.WriteLine("Value of biggy is {0}", biggy);
+            Console.WriteLine("Is biggy an even value?: {0}", biggy.IsEven);
+            Console.WriteLine("Is biggy a power of two?: {0}", biggy.IsPowerOfTwo);
+            BigInteger reallyBig = BigInteger.Multiply(biggy, BigInteger.Parse("8888888888888888888888888888888888888888888"));
+            Console.WriteLine("Value of reallyBig is {0}", reallyBig);
+            Console.WriteLine();
+
         }
 
     }
