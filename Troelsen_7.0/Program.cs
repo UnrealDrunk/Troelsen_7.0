@@ -16,6 +16,7 @@ namespace Troelsen_7._0
             chapter.ObjectFunctionality();
             chapter.DataTypeFunctionality();
             chapter.MembersOfSystemBolean();
+            chapter.CharFunctionality();
 
             //
 
