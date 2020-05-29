@@ -15,6 +15,7 @@ namespace Troelsen_7._0
             Chapter_3 chapter = new Chapter_3();
             chapter.ObjectFunctionality();
             chapter.DataTypeFunctionality();
+            chapter.MembersOfSystemBolean();
 
             //
 

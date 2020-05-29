@@ -47,5 +47,18 @@ namespace Troelsen_7._0
         }
 
 
+        /// <summary>
+        /// Демонтрация работы булевых переменных
+        /// </summary>
+        public void MembersOfSystemBolean()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("bool.FalseString: {0}", bool.FalseString);
+            Console.WriteLine("bool.TrueString: {0}", bool.TrueString);
+            Console.WriteLine();
+
+        }
+
+
     }
 }
