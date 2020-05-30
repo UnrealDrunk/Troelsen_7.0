@@ -190,6 +190,23 @@ namespace Troelsen_7._0
         
         }
 
+        /// <summary>
+        /// Демонстрация базовойфункцональности строковых типов данных
+        /// </summary>
+        public void BasicStringFunctionality()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> Basic String Functionality: ");
+            string firstName = "Freddy";
+            Console.WriteLine("Value of first nsame is {0}", firstName);
+            Console.WriteLine("first name has {0} characters.", firstName.Length);
+            Console.WriteLine("first name in upper case: {0}", firstName.ToUpper());
+            Console.WriteLine("first name in lower case: {0}", firstName.ToLower());
+            Console.WriteLine("first name contains the letter 'y'? {0}", firstName.Contains("y"));
+            Console.WriteLine("first name after replace: {0}", firstName.Replace("dy", ""));
+            Console.WriteLine();
+
+        }
 
 
 
