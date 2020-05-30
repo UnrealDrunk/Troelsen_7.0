@@ -24,6 +24,7 @@ namespace Troelsen_7._0
             chapter_3.DidgitSeparators();
             chapter_3.BasicStringFunctionality();
             chapter_3.StringConcatenation();
+            chapter_3.StringConcatenationWConcat();
 
             //
 

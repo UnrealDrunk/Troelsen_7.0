@@ -222,6 +222,19 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация работы канкатенации с помощью статического метода String.Concat()
+        /// </summary>
+        public void StringConcatenationWConcat()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> String Concatenation with String.Concat");
+            string s1 = "Programming the ";
+            string s2 = "PsychoDrill (PTP)";
+            string s3 = String.Concat(s1, s2);
+            Console.WriteLine(s3);
+            Console.WriteLine();
+        }
 
     }
 }
