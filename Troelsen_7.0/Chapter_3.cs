@@ -309,5 +309,26 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Метод демонстрирующий неизменность значений строк несмотря на манипуляции с размером шрифта
+        /// </summary>
+        public void StrigsAreImmutable()
+        {
+            Console.WriteLine("Chapter_3");
+            //Инициализируем новую строку
+            string s1 = "This is my string";
+            Console.WriteLine("s1 = {0}", s1);
+
+            //Увеличиваем шрифт
+            string upperString = s1.ToUpper();
+            Console.WriteLine("upperString = {0}", upperString);
+
+            // Однако строка s1 останется в исходном формате
+
+            Console.WriteLine("s1 = {0}", s1);
+            Console.WriteLine();
+        }
+
+
     }
 }
