@@ -252,5 +252,30 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация проверки строк на равнество (соответствие по содержанию)
+        /// </summary>
+        public void StringEquality()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> String equality: ");
+            string s1 = "Hello!";
+            string s2 = "Yo!";
+            Console.WriteLine("s1 = {0}", s1);
+            Console.WriteLine("s2 = {0}", s2);
+            Console.WriteLine();
+
+            //тест строк на равенство (соотвествтие друг другу по содержанию)
+            Console.WriteLine("s1 == s2: {0}", s1==s2);
+            Console.WriteLine("s1 = Hello!: {0}", s1=="Hello!");
+            Console.WriteLine("s1 = HELLO!: {0}", s1=="HELLO!");
+            Console.WriteLine("s1 = hello!: {0}", s1=="hello!");
+            Console.WriteLine("s1.Equals(s2): {0}", s1.Equals(s2));
+            Console.WriteLine("Yo.Equals(s2): {0}", "Yo!".Equals(s2));
+            Console.WriteLine();
+
+
+        }
+
     }
 }
