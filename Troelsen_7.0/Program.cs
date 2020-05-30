@@ -27,7 +27,7 @@ namespace Troelsen_7._0
             chapter_3.StringConcatenationWConcat();
             chapter_3.EscapeChars();
             chapter_3.StringEquality();
-
+            chapter_3.StringEqualitySpecifyingCompareRules();
             //
 
 
