@@ -167,5 +167,31 @@ namespace Troelsen_7._0
 
         }
 
+        
+      
+        /// <summary>
+        /// Демонстрация работы числовых разделителей
+        /// </summary>
+        public void DidgitSeparators()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> Use Didgit Separators");
+            Console.WriteLine("Integer: ");
+            Console.WriteLine(123_456);
+            Console.WriteLine("Long: ");
+            Console.WriteLine("123_456_789L");
+            Console.WriteLine("Float: ");
+            Console.WriteLine("123_456.1234f");
+            Console.WriteLine("Double: ");
+            Console.WriteLine("123_456.12");
+            Console.WriteLine("Decimal");
+            Console.WriteLine("123_456M");
+            Console.WriteLine();
+        
+        }
+
+
+
+
     }
 }
