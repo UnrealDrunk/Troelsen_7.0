@@ -208,6 +208,19 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонтсрация работы конкатенации (сложения строк)
+        /// </summary>
+        public void StringConcatenation()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> String Concatenation");
+            string s1 = "Programming the ";
+            string s2 = "PsychoDrill (PTP)";
+            string s3 = s1 + s2;
+            Console.WriteLine(s3);
+            Console.WriteLine();
+        }
 
 
     }
