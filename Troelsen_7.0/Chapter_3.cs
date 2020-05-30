@@ -236,5 +236,21 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация работы Escape - последовательностей
+        /// </summary>
+        public void EscapeChars()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("=> Escape characters: ");
+            string strWithTabs = "Model\tColor\tSpeed\tPet Name\a";
+            Console.WriteLine(strWithTabs);
+
+            Console.WriteLine("Everyone loves \"Hello World\"\a");
+            Console.WriteLine(@"C:\MyApp\bin\debug");
+            Console.WriteLine("All finished. \n\n\n\a");
+            Console.WriteLine();
+        }
+
     }
 }
