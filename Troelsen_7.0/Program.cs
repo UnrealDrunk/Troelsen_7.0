@@ -127,7 +127,7 @@ namespace Troelsen_7._0
             chapter_3.StringInterpolation();
             chapter_3.NarrowingAttemptWithLoss();
             chapter_3.NarrowingAttemptWihoutLoss();
-
+            chapter_3.ProcessBytes();
             //
 
 

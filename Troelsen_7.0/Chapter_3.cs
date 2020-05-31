@@ -415,5 +415,33 @@ namespace Troelsen_7._0
             Console.WriteLine("Value of myByte: {0}", myByte);
             Console.WriteLine();
         }
+
+        /// <summary>
+        /// Демонстрация работы исключительной ситуациии при переполнении данных
+        /// </summary>
+        public void ProcessBytes()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("Работа с отлавливанием ошибки при перевыполнении ");
+            
+            byte b1 = 100;
+            byte b2 = 250;
+
+            //перехват исключения при переполнении памяти при выполнении операции
+
+            try
+            {
+                checked
+                {
+                    byte sum = (byte)AddSum(b1, b2);
+                }
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+
+        }
     }
 }
