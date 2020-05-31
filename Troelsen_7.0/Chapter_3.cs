@@ -378,7 +378,7 @@ namespace Troelsen_7._0
         /// <summary>
         /// Демонстрация работы явного приведения данных с потерей данных
         /// </summary>
-        public void NarrowingAttempt1()
+        public void NarrowingAttemptWithLoss()
         {
             Console.WriteLine("Chapter_3");
             Console.WriteLine("****Fun with type conversions****");
@@ -401,5 +401,19 @@ namespace Troelsen_7._0
             return x + y;
         }
 
+        /// <summary>
+        /// Демонтсрация работы явного привдения типов данных с потерей данных
+        /// </summary>
+        public void NarrowingAttemptWihoutLoss()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("****Fun with type conversions****");
+            byte myByte = 0;
+            int myInt = 200;
+            //Явное приведение типов данных без потреи информации
+            myByte = (byte)myInt;
+            Console.WriteLine("Value of myByte: {0}", myByte);
+            Console.WriteLine();
+        }
     }
 }
