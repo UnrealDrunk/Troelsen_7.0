@@ -353,5 +353,23 @@ namespace Troelsen_7._0
             Console.WriteLine();
 
         }
+
+        /// <summary>
+        /// Демонтсрация ввода текстовых данных методом интерполяции
+        /// </summary>
+        public void StringInterpolation()
+        {
+            // Локальные переменные, которые будут встроены в строковый тип данных
+            int age = 4;
+            string name = "Soren";
+
+            // Для вывода строки используем синтакис с фигурными скобками
+            string greeting = string.Format("Hello, {0}, you are {1} years old.", name, age);
+
+            // Применение интерполяции
+            string greeting2 = $"Hello, {name}, you are {age}, years old.";
+
+            Console.WriteLine(greeting + "\n" +greeting2);
+        }
     }
 }
