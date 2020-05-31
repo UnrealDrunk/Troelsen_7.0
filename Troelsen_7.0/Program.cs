@@ -125,6 +125,7 @@ namespace Troelsen_7._0
             chapter_3.StrigsAreImmutable();
             chapter_3.FunWithStringBuilder();
             chapter_3.StringInterpolation();
+            chapter_3.NarrowingAttempt1();
 
             //
 

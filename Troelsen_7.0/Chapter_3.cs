@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
+using System.Runtime.Remoting.Messaging;
 
 namespace Troelsen_7._0
 {
@@ -359,6 +360,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void StringInterpolation()
         {
+            Console.WriteLine("Chapter_3");
             // Локальные переменные, которые будут встроены в строковый тип данных
             int age = 4;
             string name = "Soren";
@@ -370,6 +372,34 @@ namespace Troelsen_7._0
             string greeting2 = $"Hello, {name}, you are {age}, years old.";
 
             Console.WriteLine(greeting + "\n" +greeting2);
+            Console.WriteLine();
         }
+
+        /// <summary>
+        /// Демонстрация работы явного приведения данных с потерей данных
+        /// </summary>
+        public void NarrowingAttempt1()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("****Fun with type conversions****");
+            short numb1 = 30000, numb2 = 30000;
+
+            // Явное приведение данных типа int к типу short с потерей данных
+            short answer = (short)AddSum(numb1, numb2);
+            Console.WriteLine("{0} + {1} = {2}", numb1, numb2, answer);
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Вспомогательный метод для суммирования 2х чисел
+        /// </summary>
+        /// <param name="x">первое число</param>
+        /// <param name="y">воторое число</param>
+        /// <returns>сумма двух чисел</returns>
+        private static int AddSum(int x, int y)
+        {
+            return x + y;
+        }
+
     }
 }
