@@ -334,6 +334,24 @@ namespace Troelsen_7._0
             Console.WriteLine("s2 = {0}", s2);
         }
 
+        /// <summary>
+        /// Демонтрация работы класса StringBuilder
+        /// </summary>
+        public void FunWithStringBuilder()
+        {
+            Console.WriteLine("Chapter_3");
+            StringBuilder stringBuilder = new StringBuilder("****Fantastic Games****");
+            stringBuilder.Append("\n");
+            stringBuilder.Append("Half Life ");
+            stringBuilder.Append("Morrowind ");
+            stringBuilder.Append("Deus Ex" + " 2 ");
+            stringBuilder.Append("System Shock ");
+            Console.WriteLine(stringBuilder.ToString());
+            stringBuilder.Replace("2", "Invisble War");
+            Console.WriteLine(stringBuilder.ToString());
+            Console.WriteLine("stringBuilder has {0} chars", stringBuilder.Length);
+            Console.WriteLine();
 
+        }
     }
 }

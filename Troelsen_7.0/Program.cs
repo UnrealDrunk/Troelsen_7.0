@@ -49,7 +49,6 @@ namespace Troelsen_7._0
                         case 2:
                             Console.WriteLine("Программа прекарщает работу");
                             IsExecuted = true;
-                            Console.ReadLine();
                             break;
                         default:
                             Console.WriteLine("Некорректный ввод данных, требуется ввести 1 или 2. Попробуйте ещё раз.");
@@ -124,6 +123,7 @@ namespace Troelsen_7._0
             chapter_3.StringEquality();
             chapter_3.StringEqualitySpecifyingCompareRules();
             chapter_3.StrigsAreImmutable();
+            chapter_3.FunWithStringBuilder();
 
             //
 
