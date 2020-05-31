@@ -327,6 +327,11 @@ namespace Troelsen_7._0
 
             Console.WriteLine("s1 = {0}", s1);
             Console.WriteLine();
+
+            string s2 = "My other string";
+            Console.WriteLine("s2 = {0}", s2);
+            s2 = "New string s2 value";
+            Console.WriteLine("s2 = {0}", s2);
         }
 
 
