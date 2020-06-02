@@ -510,7 +510,24 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонстрация работы цикла for
+        /// </summary>
+        public void ForLoopExample()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("ForLoopExample");
 
+            // базовый цикл for
+            //Переменная i видна только в пределах нижеуказанного цикла for
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("Number is: {0}", i);
+            }
+            //за пределами цикла for переменная i не видна
+            Console.WriteLine();
+
+        }
     }
     
 }
