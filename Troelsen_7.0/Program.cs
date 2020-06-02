@@ -129,6 +129,7 @@ namespace Troelsen_7._0
             chapter_3.NarrowingAttemptWihoutLoss();
             chapter_3.ProcessBytes();
             chapter_3.DeclareVarsImplictVars();
+            chapter_3.LinqQueryOverInts();
             //
 
 

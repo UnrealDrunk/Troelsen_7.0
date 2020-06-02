@@ -483,5 +483,34 @@ namespace Troelsen_7._0
             Console.WriteLine("myString is a {0}", myString.GetType().Name);
             Console.WriteLine();
         }
+        
+        /// <summary>
+        /// Демонстрация работы типа var с использованием LINQ
+        /// </summary>
+        public void LinqQueryOverInts()
+        {
+            Console.WriteLine("LinqQueryOverInts");
+            Console.WriteLine("Chapter_3");
+            int[] numbers = { 10, 20, 30, 40, 1, 2, 3, 8 };
+
+            // LINQ Query
+
+            var subset = from i in numbers where i < 10 select i;
+            Console.WriteLine("Values in subset: ");
+            foreach (var i in subset)
+            {
+                Console.WriteLine("{0}", i);
+            }
+
+            // Выясняем какого типа переменная subset
+
+            Console.WriteLine("subset is a {0}", subset.GetType().Name);
+            Console.WriteLine("subset defined in: {0}", subset.GetType().Namespace);
+            Console.WriteLine();
+
+        }
+
+
     }
+    
 }
