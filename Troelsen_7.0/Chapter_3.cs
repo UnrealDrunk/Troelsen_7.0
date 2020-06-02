@@ -20,6 +20,7 @@ namespace Troelsen_7._0
         {
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> System.Object Functionality \n");
+            Console.WriteLine("ObjectFunctionality");
 
             // C # int на самом деле является сокращением для System.Int32,
             // который наследует следующие члены из System.Object.
@@ -36,6 +37,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void DataTypeFunctionality()
         {
+            Console.WriteLine("DataTypeFunctionality");
             Console.WriteLine("Chapter_3");
             Console.WriteLine(" Max of int: {0}", int.MaxValue);
             Console.WriteLine(" Min of int: {0}", int.MinValue);
@@ -54,6 +56,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void MembersOfSystemBolean()
         {
+            Console.WriteLine("MembersOfSystemBolean");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("bool.FalseString: {0}", bool.FalseString);
             Console.WriteLine("bool.TrueString: {0}", bool.TrueString);
@@ -67,6 +70,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void CharFunctionality()
         {
+            Console.WriteLine("CharFunctionality");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> char type functionality");
             char myChar = 'a';
@@ -84,6 +88,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void ParseFromStrings()
         {
+            Console.WriteLine("ParseFromStrings");
             Console.WriteLine("Chapter_3");
             Console.WriteLine(" => Data type parsing");
             bool b = bool.Parse("True");
@@ -103,6 +108,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void ParseFromStringsWithTryParse()
         {
+            Console.WriteLine("ParseFromStringsWithTryParse");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> Data types parsing with TryParse: ");
             if (bool.TryParse("True", out bool b))
@@ -131,7 +137,7 @@ namespace Troelsen_7._0
         {
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> Dates and times");
-
+            Console.WriteLine("UseDatesAndTimes");
             //Конструктор принимает парметры - (год, месяц, дата)
             DateTime dt = new DateTime(2015, 10, 17);
 
@@ -156,6 +162,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void UseBigIntegers()
         {
+            Console.WriteLine("UseBigIntegers");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> Use BigInteger");
             BigInteger biggy = BigInteger.Parse("9999999999999999999999999999999999999999999999");
@@ -175,6 +182,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void DidgitSeparators()
         {
+            Console.WriteLine("DidgitSeparators");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> Use Didgit Separators");
             Console.WriteLine("Integer: ");
@@ -196,6 +204,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void BasicStringFunctionality()
         {
+            Console.WriteLine("BasicStringFunctionality");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> Basic String Functionality: ");
             string firstName = "Freddy";
@@ -214,6 +223,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void StringConcatenation()
         {
+            Console.WriteLine("StringConcatenation");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> String Concatenation");
             string s1 = "Programming the ";
@@ -228,6 +238,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void StringConcatenationWConcat()
         {
+            Console.WriteLine("StringConcatenationWConcat");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> String Concatenation with String.Concat");
             string s1 = "Programming the ";
@@ -242,6 +253,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void EscapeChars()
         {
+            Console.WriteLine("EscapeChars");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> Escape characters: ");
             string strWithTabs = "Model\tColor\tSpeed\tPet Name\a";
@@ -258,6 +270,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void StringEquality()
         {
+            Console.WriteLine("StringEquality");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> String equality: ");
             string s1 = "Hello!";
@@ -283,6 +296,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void StringEqualitySpecifyingCompareRules()
         {
+            Console.WriteLine("StringEqualitySpecifyingCompareRules");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("=> String equality (Case Insensitive: )");
             string s1 = "Hello!";
@@ -315,6 +329,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void StrigsAreImmutable()
         {
+            Console.WriteLine("StrigsAreImmutable");
             Console.WriteLine("Chapter_3");
             //Инициализируем новую строку
             string s1 = "This is my string";
@@ -340,6 +355,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void FunWithStringBuilder()
         {
+            Console.WriteLine("FunWithStringBuilder");
             Console.WriteLine("Chapter_3");
             StringBuilder stringBuilder = new StringBuilder("****Fantastic Games****");
             stringBuilder.Append("\n");
@@ -360,6 +376,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void StringInterpolation()
         {
+            Console.WriteLine("StringInterpolation");
             Console.WriteLine("Chapter_3");
             // Локальные переменные, которые будут встроены в строковый тип данных
             int age = 4;
@@ -380,6 +397,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void NarrowingAttemptWithLoss()
         {
+            Console.WriteLine("NarrowingAttemptWithLoss");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("****Fun with type conversions****");
             short numb1 = 30000, numb2 = 30000;
@@ -406,6 +424,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void NarrowingAttemptWihoutLoss()
         {
+            Console.WriteLine("NarrowingAttemptWihoutLoss");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("****Fun with type conversions****");
             byte myByte = 0;
@@ -421,6 +440,7 @@ namespace Troelsen_7._0
         /// </summary>
         public void ProcessBytes()
         {
+            Console.WriteLine("ProcessBytes");
             Console.WriteLine("Chapter_3");
             Console.WriteLine("Работа с отлавливанием ошибки при перевыполнении ");
             
@@ -441,7 +461,27 @@ namespace Troelsen_7._0
                 Console.WriteLine(ex.Message);
             }
 
+            Console.WriteLine();
+        }
 
+        /// <summary>
+        /// Демонстрация автоматического определения типов данных
+        /// </summary>
+        public void DeclareVarsImplictVars()
+        {
+            Console.WriteLine("DeclareVarsImplictVars");
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("Работа типом данных var");
+            // переменные с неявным типом данных
+            var myInt = 0;
+            var myBool = true;
+            var myString = "Time, marches on...";
+
+            // Печатаем в консоль (выводим типы данных)
+            Console.WriteLine("myInt is a {0}", myInt.GetType().Name);
+            Console.WriteLine("myBool is a {0}", myBool.GetType().Name);
+            Console.WriteLine("myString is a {0}", myString.GetType().Name);
+            Console.WriteLine();
         }
     }
 }
