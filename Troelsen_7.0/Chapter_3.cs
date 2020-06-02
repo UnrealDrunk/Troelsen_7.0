@@ -528,6 +528,31 @@ namespace Troelsen_7._0
             Console.WriteLine();
 
         }
+
+        /// <summary>
+        /// Демонстрация работы цикла foreach
+        /// </summary>
+        public void ForeachLoopExample()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("ForeachLoopExample");
+
+            //переберем массив с помощью цикла foreach
+
+            string[] carTypes = { "Ford", "BVW", "Yugo", "Honda" };
+            foreach (string c in carTypes)
+            {
+                Console.WriteLine(c);
+            }
+            int[] myInts = { 10, 20, 30, 40 };
+            foreach (int i in myInts)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine();
+
+        }
+
     }
     
 }
