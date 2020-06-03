@@ -135,6 +135,7 @@ namespace Troelsen_7._0
             chapter_3.WhileLoopExample();
             chapter_3.DoWhileLoopExample();
             chapter_3.IfElseExample();
+            chapter_3.ExecuteIfElseConditionalOperator();
             //
 
 

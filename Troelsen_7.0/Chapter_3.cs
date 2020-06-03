@@ -615,6 +615,23 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Десонстрация работы тернарного оператора
+        /// </summary>
+        public void ExecuteIfElseConditionalOperator()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("ExecuteIfElseConditionalOperator");
+            string stringData = "My textual data";
+
+            Console.WriteLine(stringData.Length>0
+                ? "string is greater than 0 characters"
+                : "string is NOT greater than 0 characters");
+
+            Console.WriteLine();
+
+        }
+
     }
     
 }
