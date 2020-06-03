@@ -69,7 +69,8 @@ namespace Troelsen_7._0
         {
             #region Реализация метода
             Console.WriteLine("Выберите главу для демонстрации работы содеражщихся в ней программ: \n" +
-                "для выбора главы 3 нажмите цифру 3");
+                "для выбора главы 3 нажмите цифру 3\n" +
+                "для выбора главы 4 нажмие цифру 4");
             Console.Write("Ваш выбор?: ");
             bool IsSelected = false;
 
@@ -93,6 +94,10 @@ namespace Troelsen_7._0
                 {
                     case 3:
                         RunChapterThree();
+                        IsSelected = true;
+                        break;
+                    case 4:
+                        RunChapterFour();
                         IsSelected = true;
                         break;
                     default:
@@ -151,6 +156,12 @@ namespace Troelsen_7._0
             #endregion
 
 
+        }
+
+        private static void RunChapterFour()
+        {
+            // Модуль управления главой 4
+            Console.WriteLine("Пошла глава 4");
         }
 
 
