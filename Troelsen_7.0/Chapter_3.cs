@@ -632,6 +632,34 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонстрация работы Switch(case)  на примере числовых данных
+        /// </summary>
+        public void SwitchExample()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("SwitchExample, on numerical value");
+            Console.WriteLine("1 [C#], 2[VB]");
+            Console.WriteLine("Please pick up your language preference: ");
+            string langChoice = Console.ReadLine();
+            int n = int.Parse(langChoice);
+
+            switch (n)
+            {
+                case 1:
+                    Console.WriteLine("Good choice, C# is fine language");
+                    break;
+                case 2:
+                    Console.WriteLine("VB: OOP, multithreading, and more");
+                    break;
+                default:
+                    Console.WriteLine("Well... good luck with that!");
+                    break;
+            }
+            Console.WriteLine();
+                
+        }
+
     }
     
 }
