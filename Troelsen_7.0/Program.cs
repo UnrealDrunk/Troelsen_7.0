@@ -137,6 +137,7 @@ namespace Troelsen_7._0
             chapter_3.IfElseExample();
             chapter_3.ExecuteIfElseConditionalOperator();
             chapter_3.SwitchExample();
+            chapter_3.SwitchOnStringExample();
             //
 
 

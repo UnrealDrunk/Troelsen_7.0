@@ -657,7 +657,32 @@ namespace Troelsen_7._0
                     break;
             }
             Console.WriteLine();
-                
+        }
+
+        /// <summary>
+        /// Демонстрация работы Switch(case)  на примере строковых данных
+        /// </summary>
+        public void SwitchOnStringExample()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("SwitchOnStringExample, on string example");
+            Console.WriteLine("C# or VB");
+            Console.WriteLine("Please pick your language preference");
+            string langChoice = Console.ReadLine();
+
+            switch (langChoice)
+            {
+                case "C#":
+                    Console.WriteLine("Good choice, C# is a fine language");
+                    break;
+                case "VB":
+                    Console.WriteLine("VB: OOP, multithreading and more!");
+                    break;
+                default:
+                    Console.WriteLine("Well... good luck with that!");
+                    break;
+            }
+            Console.WriteLine();
         }
 
     }
