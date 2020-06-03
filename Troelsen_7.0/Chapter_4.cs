@@ -35,5 +35,34 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация различных способов инициализации массивов
+        /// </summary>
+        public void ArrayInitialization()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ArrayInitialization");
+            Console.WriteLine("=> Array initialization");
+            //Инициализация нвого массива с использованием ключевого слова new
+
+            string[] stringArray = new string[]
+            {
+                "one", "two", "three"
+            };
+            Console.WriteLine("stringArray has {0} elements", stringArray.Length);
+
+            //Инициализация нового массива без использования ключевого слова new
+
+            bool[] boolArray = { false, false, true };
+            Console.WriteLine("boolArray has {0} elements", boolArray.Length);
+
+            //Инициализация массива с использованием ключевого слова new и указанием размера
+
+            int[] intArray = new int[4] { 20, 22, 23, 0 };
+            Console.WriteLine("intArray has {0} elements", intArray.Length);
+            Console.WriteLine();
+
+        }
+
     }
 }

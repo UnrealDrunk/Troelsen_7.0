@@ -110,7 +110,7 @@ namespace Troelsen_7._0
         }
 
         /// <summary>
-        /// Запуск программ, содеержащихся в главе 3
+        /// Запуск программ, содержащихся в главе 3
         /// </summary>
         private static void RunChapterThree()
         {
@@ -158,11 +158,15 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Запуск программ, содержащихся в главе 4
+        /// </summary>
         private static void RunChapterFour()
         {
             // Модуль управления главой 4
             Chapter_4 chapter_4 = new Chapter_4();
             chapter_4.SimpleArrays();
+            chapter_4.ArrayInitialization();
         }
 
 
