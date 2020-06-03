@@ -133,6 +133,7 @@ namespace Troelsen_7._0
             chapter_3.ForLoopExample();
             chapter_3.ForeachLoopExample();
             chapter_3.WhileLoopExample();
+            chapter_3.DoWhileLoopExample();
             //
 
 

@@ -572,6 +572,27 @@ namespace Troelsen_7._0
             Console.WriteLine("Exit from the loop");
             Console.WriteLine();
         }
+
+        /// <summary>
+        /// Демонстрация работы цикла Do/While
+        /// </summary>
+        public void DoWhileLoopExample()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("DoWhileLoopExample");
+            string userIsDone = "";
+
+            do
+            {
+                Console.WriteLine("In do/while loop");
+                Console.Write("Are you done? [yes] [no]: ");
+                userIsDone = Console.ReadLine();
+
+            } while (userIsDone.ToLower() != "yes");
+
+            Console.WriteLine("Exit from the loop");
+            Console.WriteLine();
+        }
     }
     
 }
