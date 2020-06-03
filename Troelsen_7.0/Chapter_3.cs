@@ -593,6 +593,28 @@ namespace Troelsen_7._0
             Console.WriteLine("Exit from the loop");
             Console.WriteLine();
         }
+
+        /// <summary>
+        /// Демонстрация работы условной конструкции if/else
+        /// </summary>
+        public void IfElseExample()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("IfElseExample");
+            string stringData = "My textual data";
+            //string stringData = "";
+
+            if (stringData.Length >0)
+            {
+                Console.WriteLine("String is greater than 0 characters: {0}", stringData);
+            }
+            else
+            {
+                Console.WriteLine("String is NOT Greater than 0 characters");
+            }
+            Console.WriteLine();
+        }
+
     }
     
 }
