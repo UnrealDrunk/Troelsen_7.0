@@ -145,5 +145,37 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация работы зубчатого массива (массива массивов)
+        /// </summary>
+        public void JaggedMultidimensionalArray()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("JaggedMultidimensionalArray");
+            Console.WriteLine("=> Jagged multidimensional array");
+
+            //Зубчатый массив, или массив массивов
+            //В рассматриваемом примере - массив состоящий из пяти различных массивов
+
+            int[][] myJagArray = new int[5][];
+
+            //Создаём зубчатый массив
+            for (int i = 0; i < myJagArray.Length; i++)
+            {
+                myJagArray[i] = new int[i + 7];
+            }
+
+            //Выводим массив в консоль. Внимание, каждый элемент по умолчанию равен нулю
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < myJagArray[i].Length; j++)
+                {
+                    Console.Write(myJagArray[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
     }
 }
