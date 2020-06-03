@@ -161,7 +161,8 @@ namespace Troelsen_7._0
         private static void RunChapterFour()
         {
             // Модуль управления главой 4
-            Console.WriteLine("Пошла глава 4");
+            Chapter_4 chapter_4 = new Chapter_4();
+            chapter_4.SimpleArrays();
         }
 
 
