@@ -779,7 +779,7 @@ namespace Troelsen_7._0
                     choice = "Hi";
                     break;
                 case "3":
-                    choice = 2.5;
+                    choice = (decimal)2.5;
                     break;
                 default:
                     choice = 5;
@@ -791,13 +791,13 @@ namespace Troelsen_7._0
             switch (choice)
             {
                 case int i:
-                    Console.WriteLine("Your choice is an integer");
+                    Console.WriteLine("Your choice is an integer: {0}", i);
                     break;
                 case string s:
-                    Console.WriteLine("Your choice is a string");
+                    Console.WriteLine("Your choice is a string: {0}", s);
                     break;
                 case decimal d:
-                    Console.WriteLine("Your choise is a decimal");
+                    Console.WriteLine("Your choise is a decimal: {0}", d);
                     break;
                 default:
                     Console.WriteLine("Your choise is something else");

@@ -12,7 +12,7 @@ namespace Troelsen_7._0
         static void Main(string[] args)
         {
             ExecutePrograms();
-            //ExecuteTests.SwitchOnEnumExample();
+            //ExecuteTests.ExecutePatternMatchingSwitch();
         }
 
         /// <summary>
