@@ -732,6 +732,31 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация работы Switch(case) с импользованием goto
+        /// </summary>
+        public void SwitchWithGoto()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("SwitchWithGoto");
+
+            var foo = 5;
+            switch (foo)
+            {
+                case 1:
+                    goto case 2;
+                case 2:
+                    Console.WriteLine("not a good idea");
+                    break;
+                case 3:
+                    goto default;
+                default:
+                    Console.WriteLine("Default action");
+                    break;
+            }
+            Console.WriteLine();
+        }
+
     }
     
 }

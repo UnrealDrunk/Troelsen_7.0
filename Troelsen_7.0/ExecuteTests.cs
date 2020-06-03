@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Troelsen_7._0
 {
+    /// <summary>
+    /// Демонстрация работы Switch(case)  на примере перечислений (энумераторов)
+    /// </summary>
     public static class ExecuteTests
     {
         public static void SwitchOnEnumExample()
@@ -51,6 +54,12 @@ namespace Troelsen_7._0
             }
             Console.WriteLine();
         }
+
+
+
+
+
+
 
     }
 

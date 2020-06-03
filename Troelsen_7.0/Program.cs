@@ -140,6 +140,7 @@ namespace Troelsen_7._0
             chapter_3.SwitchExample();
             chapter_3.SwitchOnStringExample();
             chapter_3.SwitchOnEnumExample();
+            chapter_3.SwitchWithGoto();
             //
 
 
