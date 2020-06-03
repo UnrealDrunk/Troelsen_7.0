@@ -806,6 +806,33 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация проверки типа данных переменной с помощью Switch/Case с использованием ключевого слова when
+        /// </summary>
+        public void ExecutePatternMatchingSwitchWithWhen()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("ExecutePatternMatchingSwitchWithWhen");
+            Console.WriteLine("1 [C#], 2 [VB]");
+            object langChoice = Console.ReadLine();
+            var choice = int.TryParse(langChoice.ToString(), out int c) ? c : langChoice;
+
+            switch (choice)
+            {
+                case int i when i == 2:
+                case string s when s.Equals("VB", StringComparison.OrdinalIgnoreCase):
+                    Console.WriteLine("VB: OOP, multithreading, and more!");
+                    break;
+                case int i when i == 1:
+                case string s when s.Equals("C#", StringComparison.OrdinalIgnoreCase):
+                    Console.WriteLine("Good choice, C# is a fine language.");
+                    break;
+                default:
+                    Console.WriteLine("Well... Good luck with that!");
+                    break;
+            }
+            Console.WriteLine();
+        }
     }
     
 }

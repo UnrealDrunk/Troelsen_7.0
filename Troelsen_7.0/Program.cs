@@ -12,7 +12,7 @@ namespace Troelsen_7._0
         static void Main(string[] args)
         {
             ExecutePrograms();
-            //ExecuteTests.ExecutePatternMatchingSwitch();
+            
         }
 
         /// <summary>
@@ -20,6 +20,7 @@ namespace Troelsen_7._0
         /// </summary>
         private static void ExecutePrograms()
         {
+            #region реализация метода
             ChapterSelector();
             bool IsExecuted = false;
             while (!IsExecuted)
@@ -57,6 +58,7 @@ namespace Troelsen_7._0
                     }
                 }
             }
+            #endregion
         }
 
 
@@ -65,6 +67,7 @@ namespace Troelsen_7._0
         /// </summary>
         private static void ChapterSelector()
         {
+            #region Реализация метода
             Console.WriteLine("Выберите главу для демонстрации работы содеражщихся в ней программ: \n" +
                 "для выбора главы 3 нажмите цифру 3");
             Console.Write("Ваш выбор?: ");
@@ -98,6 +101,7 @@ namespace Troelsen_7._0
                 }
 
             }
+            #endregion
         }
 
         /// <summary>
@@ -106,7 +110,7 @@ namespace Troelsen_7._0
         private static void RunChapterThree()
         {
             // Модуль управления главой 3
-
+            #region Методы реализации примеров, описанные в главе 3
             Chapter_3 chapter_3 = new Chapter_3();
             chapter_3.ObjectFunctionality();
             chapter_3.DataTypeFunctionality();
@@ -142,8 +146,9 @@ namespace Troelsen_7._0
             chapter_3.SwitchOnEnumExample();
             chapter_3.SwitchWithGoto();
             chapter_3.ExecutePatternMatchingSwitch();
+            chapter_3.ExecutePatternMatchingSwitchWithWhen();
             //
-
+            #endregion
 
 
         }
