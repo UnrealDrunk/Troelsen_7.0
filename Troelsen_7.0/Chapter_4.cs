@@ -87,5 +87,28 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация работы массива, состоящего из данных типа Object
+        /// </summary>
+        public void ArrayOfObjects()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ArrayOfObjects");
+            Console.WriteLine("=> Array of Objects");
+
+            //Массив типа данных Object может содержать всё что угодно
+            object[] myObjects = new object[4];
+            myObjects[0] = 10;
+            myObjects[1] = false;
+            myObjects[2] = new DateTime(1969, 3, 24);
+            myObjects[3] = "Form & Void";
+            foreach (object obj in myObjects)
+            {
+                //Выводим в консоль значение и тип каждого объекта
+                Console.WriteLine("Type: {0}, Value: {1}", obj.GetType(), obj);
+            }
+            Console.WriteLine();
+        }
+
     }
 }
