@@ -167,6 +167,7 @@ namespace Troelsen_7._0
             Chapter_4 chapter_4 = new Chapter_4();
             chapter_4.SimpleArrays();
             chapter_4.ArrayInitialization();
+            chapter_4.DeclareImplicitlyArrays();
         }
 
 

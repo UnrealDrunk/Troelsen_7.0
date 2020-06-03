@@ -64,5 +64,28 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонстрация неявного определения типа массива в процессе инициализации
+        /// </summary>
+        public void DeclareImplicitlyArrays()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("DeclareImplicitlyArrays");
+            Console.WriteLine("=> Implicit Array Initialization");
+
+            //На самом деле массив с целыми числами
+            var a = new[] { 1, 10, 100, 1000 };
+            Console.WriteLine("a is a {0}", a.ToString());
+
+            //На самом деле массив дробных чисел
+            var b = new[] { 1, 2.5, 2, 3.5 };
+            Console.WriteLine("b is a {0}",b.ToString());
+
+            //На самом деле массив строк
+            var c = new[] { "Hello", null, "World" };
+            Console.WriteLine("c is a {0}", c.ToString());
+            Console.WriteLine();
+        }
+
     }
 }
