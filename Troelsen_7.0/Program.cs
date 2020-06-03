@@ -12,6 +12,7 @@ namespace Troelsen_7._0
         static void Main(string[] args)
         {
             ExecutePrograms();
+            //ExecuteTests.SwitchOnEnumExample();
         }
 
         /// <summary>
@@ -138,6 +139,7 @@ namespace Troelsen_7._0
             chapter_3.ExecuteIfElseConditionalOperator();
             chapter_3.SwitchExample();
             chapter_3.SwitchOnStringExample();
+            chapter_3.SwitchOnEnumExample();
             //
 
 
