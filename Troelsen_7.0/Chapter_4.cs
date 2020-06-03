@@ -110,5 +110,40 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация работы с двумерным массивом
+        /// </summary>
+        public void RectMultidimensionalArray()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("RectMultidimensionalArray");
+            Console.WriteLine("=> Rectangular multidimensional array");
+            // Двумерный массив
+
+            int[,] myMatrix;
+            myMatrix = new int[3, 4];
+
+            // Формируем и автоматически заполняем матрицу 3*4
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    myMatrix[i, j] = i * j;
+                }
+            }
+
+            //выводим в консоль сформированную матрицу
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.Write(myMatrix[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
     }
 }

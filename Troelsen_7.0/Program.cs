@@ -169,6 +169,7 @@ namespace Troelsen_7._0
             chapter_4.ArrayInitialization();
             chapter_4.DeclareImplicitlyArrays();
             chapter_4.ArrayOfObjects();
+            chapter_4.RectMultidimensionalArray();
         }
 
 
