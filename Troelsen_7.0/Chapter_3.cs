@@ -553,6 +553,25 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонстрация работы цикла while
+        /// </summary>
+        public void WhileLoopExample()
+        {
+            Console.WriteLine("Chapter_3");
+            Console.WriteLine("WhileLoopExample");
+            string userIsDone = "";
+            //тестирование на вывод строки в нижнем регистре
+
+            while (userIsDone.ToLower()!= "yes")
+            {
+                Console.WriteLine("In while loop");
+                Console.Write("Are you done? [yes] [no]: ");
+                userIsDone = Console.ReadLine();
+            }
+            Console.WriteLine("Exit from the loop");
+            Console.WriteLine();
+        }
     }
     
 }
