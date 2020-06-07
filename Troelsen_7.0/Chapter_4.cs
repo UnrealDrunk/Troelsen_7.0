@@ -219,6 +219,46 @@ namespace Troelsen_7._0
             return theStrings;
         }
 
+        /// <summary>
+        /// Демонстрация работа класса System.Array
+        /// </summary>
+        public void SystemArrayFunctionality()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("SystemArrayFunctionality");
+            Console.WriteLine("=> Working with System.Array");
+            //Инициализируем переменные
+            string[] gothicBands = { "Tones of Tail", "Bauhaus", "Sisters of Mercy" };
+            //выводим на печать данные в том порядке, в ктором мы их завели в массив
+
+            Console.WriteLine("-> Here is the array: ");
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.Write(gothicBands[i] + ", ");
+            }
+            Console.WriteLine("\n");
+            Array.Reverse(gothicBands);
+            Console.WriteLine("-> The reversed array: ");
+            //снова выводим данные. Но порядок вывода уже будет другой, т.к. сработал реверс.
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.Write(gothicBands[i] + ", ");
+            }
+            Console.WriteLine("\n");
+
+            //Вычищаем из массива все элементы кроме одного.
+
+            Console.WriteLine("-> Cleared out all but one...");
+            Array.Clear(gothicBands, 1, 2);
+
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.Write(gothicBands[i] + ", ");
+            }
+            Console.WriteLine("");
+
+
+        }
     }
 
 

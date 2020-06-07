@@ -172,6 +172,7 @@ namespace Troelsen_7._0
             chapter_4.RectMultidimensionalArray();
             chapter_4.JaggedMultidimensionalArray();
             chapter_4.PassAndRecieveArrays();
+            chapter_4.SystemArrayFunctionality();
         }
 
 
