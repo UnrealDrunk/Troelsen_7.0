@@ -177,5 +177,49 @@ namespace Troelsen_7._0
             }
             Console.WriteLine();
         }
+        /// <summary>
+        /// Демонтстация, как массив может выступать в качестве передаваемых аргументов и в качестве возвращаемых значений
+        /// </summary>
+        public void PassAndRecieveArrays()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("PassAndRecieveArrats");
+            // Передаём массив в качестве параметра
+            int[] ages = { 20, 22, 23, 0 };
+            PrintArray(ages);
+
+            //Вовзращаем массив как значение
+            string[] strs = GetStringArray();
+            foreach (string s in strs)
+            {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Вывод числового массива на печать в косноль
+        /// </summary>
+        /// <param name="myInts">массив целых чисел</param>
+        private static void PrintArray(int[] myInts)
+        {
+            for (int i = 0; i < myInts.Length; i++)
+            {
+                Console.WriteLine("Item {0} is {1}", i, myInts[i]);
+            }
+        }
+
+        /// <summary>
+        /// Возвращает массив строк
+        /// </summary>
+        /// <returns>массив строк</returns>
+        private string[] GetStringArray()
+        {
+            string[] theStrings = { "Hello", "from", "GetStringArray" };
+            return theStrings;
+        }
+
     }
+
+
 }
