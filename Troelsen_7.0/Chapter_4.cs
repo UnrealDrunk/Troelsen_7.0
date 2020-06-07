@@ -259,6 +259,33 @@ namespace Troelsen_7._0
 
 
         }
+
+        /// <summary>
+        /// Демонтсрация работы методов с использованием ключевого слова out
+        /// </summary>
+        public void ExecuteOutKeyword()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ExecuteOutKeyword");
+            // Нет необходимости инилиализировать локальные переменные для отображения выходных параметров
+            // C#7 позволяет декларировать параметры непосредственно в вызове метода
+
+            Add(90, 90, out int ans);
+            Console.WriteLine("90 + 90 = {0}", ans);
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Метод суммирования с декларированием переменной, в котрой содержится результат непосредственно в с самом методе
+        /// </summary>
+        /// <param name="x">первая переменная</param>
+        /// <param name="y">вторая переменная</param>
+        /// <param name="ans">переменная, объявляемая в нутри метода, в которой хранится сумма</param>
+        private static void Add(int x, int y, out int ans)
+        {
+            ans = x + y;
+        }
+        
     }
 
 
