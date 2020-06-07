@@ -286,6 +286,34 @@ namespace Troelsen_7._0
             ans = x + y;
         }
         
+        /// <summary>
+        /// Демонтсрация передачи множественных значений с использованием метода  ключевым словом out
+        /// </summary>
+        public void ExecuteMultipleOutParams()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ExecuteMultipleOutParams");
+
+            int i; string str; bool b;
+            FillThisValues(out i, out str, out b);
+            Console.WriteLine("Int is: {0}", i);
+            Console.WriteLine("String is: {0}", str);
+            Console.WriteLine("Boolean is: {0}", b);
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Возвращет 3 переменных разного типа
+        /// </summary>
+        /// <param name="a"> целое число</param>
+        /// <param name="b">строка</param>
+        /// <param name="c">булева переменная</param>
+        private static void FillThisValues(out int a, out string b, out bool c)
+        {
+            a = 9;
+            b = "Enjoy your string";
+            c = true;
+        }
     }
 
 

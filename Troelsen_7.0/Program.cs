@@ -174,6 +174,7 @@ namespace Troelsen_7._0
             chapter_4.PassAndRecieveArrays();
             chapter_4.SystemArrayFunctionality();
             chapter_4.ExecuteOutKeyword();
+            chapter_4.ExecuteMultipleOutParams();
         }
 
 
