@@ -372,7 +372,33 @@ namespace Troelsen_7._0
             return strArray[position];
         }
 
+        /// <summary>
+        /// Демонтсрация изменения элемента массива за счет обращения к нему по ссылке
+        /// </summary>
+        public void RefLocalsAndParams2()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("RefLocalsAndParams2");
+            string[] stringArray = { "one", "two", "three" };
+            int pos = 1;
+            Console.WriteLine("=> use Ref return");
+            Console.WriteLine("Before: {0}, {1}, {2}", stringArray[0], stringArray[1], stringArray[2]);
+            ref var refOutput = ref SimpleRefReturn(stringArray, pos);
+            refOutput = "new";
+            Console.WriteLine("After: {0}, {1}, {2}", stringArray[0], stringArray[1], stringArray[2]);
+            Console.WriteLine();
+        }
 
+        /// <summary>
+        /// Возвращения значения элемента метода по ссылке
+        /// </summary>
+        /// <param name="strArray">передаваемый массив</param>
+        /// <param name="position">индекс массива</param>
+        /// <returns></returns>
+        private static ref string SimpleRefReturn(string[] strArray, int position)
+        {
+            return ref strArray[position];
+        }
 
     }
 
