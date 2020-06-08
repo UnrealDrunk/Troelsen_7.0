@@ -400,6 +400,51 @@ namespace Troelsen_7._0
             return ref strArray[position];
         }
 
+        /// <summary>
+        /// Демонстрация различных способов вызова метода, где в передаваемом аргументе присутствует ключевое слово params
+        /// </summary>
+        public void ParamsArray()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ParamsArray");
+            //передаём список значений типа double разделенных запятой
+            double average;
+            average = CalculateAverage(4.0, 3.2, 5.7, 64.22, 87.2);
+            Console.WriteLine("Average of dats is: {0}", average);
+
+            // в следующем случае передаём массив, состоящий из элементов double
+            double[] data = { 4.0, 3.2, 5.7 };
+            average = CalculateAverage(data);
+            Console.WriteLine("Average of dats is: {0}", average);
+
+            //Или передаём  0
+            Console.WriteLine("Average of dats is: {0}", CalculateAverage());
+            Console.WriteLine();
+
+        }
+
+
+        /// <summary>
+        /// Метод расчета средней величины из массива значений типа double
+        /// </summary>
+        /// <param name="values">ссылка на массив или список, разделенный запятой</param>
+        /// <returns></returns>
+        private static double CalculateAverage(params double[] values)
+        {
+            Console.WriteLine("You sent me {0} doubles", values.Length);
+
+            double sum = 0;
+            if (values.Length == 0)
+            {
+                return sum;
+            }
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                sum += values[i];
+            }
+            return sum / values.Length;
+        }
     }
 
 
