@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -341,6 +342,37 @@ namespace Troelsen_7._0
             s1 = s2;
             s2 = tempStr;
         }
+
+        /// <summary>
+        /// Демонстрация неизменности массива при попытки внести изменения из вне
+        /// </summary>
+        public void RefLocalsAndParams1()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("RefLocalsAndParams1");
+            string[] stringArray = { "one", "two", "three" };
+            int pos = 1;
+            Console.WriteLine("=> use simple return");
+            Console.WriteLine("Before: {0}, {1}, {2}", stringArray[0], stringArray[1], stringArray[2]);
+            var output = SimpleReturn1(stringArray, pos);
+            output = "new";
+            Console.WriteLine("After: {0}, {1}, {2}", stringArray[0], stringArray[1], stringArray[2]);
+            Console.WriteLine();
+
+        }
+
+        /// <summary>
+        /// Возвращение значения элемента метода
+        /// </summary>
+        /// <param name="strArray">передаваемый массив</param>
+        /// <param name="position">индекс передаваемого массива</param>
+        /// <returns></returns>
+        private static string SimpleReturn1(string[] strArray, int position)
+        {
+            return strArray[position];
+        }
+
+
 
     }
 
