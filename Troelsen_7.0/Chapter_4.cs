@@ -509,6 +509,53 @@ namespace Troelsen_7._0
             Console.ForegroundColor = oldTextColor;
             Console.BackgroundColor = oldBackroundColor;
         }
+
+        /// <summary>
+        /// Демонстрация работы метода с использованием типа данных Enum
+        /// </summary>
+        public void ExecuteAskForBonus()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ExecuteAskForBonus");
+            EmpType emp = EmpType.Contractor;
+            AskForBonus(emp);
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Хранит данные о должностях сотрудников
+        /// </summary>
+        private enum EmpType
+        {
+            Manager,
+            Grunt,
+            Contractor,
+            VicePresident
+        }
+
+        /// <summary>
+        /// Возвращает нужную фразу по тексту в соответствии с должностью
+        /// </summary>
+        /// <param name="e">должность сотрудника</param>
+        private static void AskForBonus(EmpType e)
+        {
+            switch (e)
+            {
+                case EmpType.Manager:
+                    Console.WriteLine("How about to stock options instead?");
+                    break;
+                case EmpType.Grunt:
+                    Console.WriteLine("You have got to be kidding...");
+                    break;
+                case EmpType.Contractor:
+                    Console.WriteLine("You already get enough cash...");
+                    break;
+                case EmpType.VicePresident:
+                    Console.WriteLine("VERY GOOD? Sir!");
+                    break;
+               
+            }
+        }
         
     }
 

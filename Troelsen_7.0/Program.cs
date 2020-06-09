@@ -181,6 +181,7 @@ namespace Troelsen_7._0
             chapter_4.ParamsArray();
             chapter_4.ExecuteEnteringLogData_001();
             chapter_4.ExecuteDisplayFancyMessages();
+            chapter_4.ExecuteAskForBonus();
         }
 
 
