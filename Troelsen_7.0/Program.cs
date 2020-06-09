@@ -179,6 +179,8 @@ namespace Troelsen_7._0
             chapter_4.RefLocalsAndParams1();
             chapter_4.RefLocalsAndParams2();
             chapter_4.ParamsArray();
+            chapter_4.ExecuteEnteringLogData_001();
+            chapter_4.ExecuteDisplayFancyMessages();
         }
 
 

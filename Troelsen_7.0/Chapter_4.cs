@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Diagnostics.SymbolStore;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -444,7 +446,67 @@ namespace Troelsen_7._0
                 sum += values[i];
             }
             return sum / values.Length;
+        
         }
+
+        /// <summary>
+        /// Демонстрация вызова методов с опциональным параметром
+        /// </summary>
+        public void ExecuteEnteringLogData_001()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ExecuteEnteringLogData");
+            EnterLogData_001("Oh no! Grid can't find data");
+            EnterLogData_001("Oh no! I can't find my payroll data", "CFO");
+            Console.WriteLine();
+        }
+
+
+        /// <summary>
+        /// Метод для работы с вводом данных и демонстрацией работы опционального параметра
+        /// </summary>
+        /// <param name="message">текст сообщения</param>
+        /// <param name="owner">имя пользователя</param>
+        private static void EnterLogData_001(string message, string owner = "Programmer")
+        {
+            Console.WriteLine("Error: {0}", message);
+            Console.WriteLine("Owner of error: {0}", owner);
+        }
+
+        /// <summary>
+        /// Демонстрация вызова метода с ипользованием именованных параметров.
+        /// </summary>
+        public void ExecuteDisplayFancyMessages()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ExecuteDisplayFancyMessages");
+            DisplayFancyMethods(message: "Wow! Fancy, indeed!", textColor: ConsoleColor.DarkRed, backgroundColor: ConsoleColor.White);
+        }
+
+
+        /// <summary>
+        /// выводит на консоль сообщение с изменением цветовых решений
+        /// </summary>
+        /// <param name="textColor"> цвет текста</param>
+        /// <param name="backgroundColor">цвет заднего фона</param>
+        /// <param name="message">текст сообщения</param>
+        private static void DisplayFancyMethods(ConsoleColor textColor, ConsoleColor backgroundColor, string message)
+        {
+            // Запоминаем состояние цветов для того, чтобы восстановить их после завершения операции
+            ConsoleColor oldTextColor = Console.ForegroundColor;
+            ConsoleColor oldBackroundColor = Console.BackgroundColor;
+
+            //Устанавливаем новые цвета для вывода сообщения
+            Console.ForegroundColor = textColor;
+            Console.BackgroundColor = backgroundColor;
+            Console.WriteLine(message);
+
+            //Восстанавливаем старые цвета после выполнения программы
+
+            Console.ForegroundColor = oldTextColor;
+            Console.BackgroundColor = oldBackroundColor;
+        }
+        
     }
 
 
