@@ -481,6 +481,9 @@ namespace Troelsen_7._0
             Console.WriteLine("Chapter 4");
             Console.WriteLine("ExecuteDisplayFancyMessages");
             DisplayFancyMethods(message: "Wow! Fancy, indeed!", textColor: ConsoleColor.DarkRed, backgroundColor: ConsoleColor.White);
+            DisplayFancyMethods(message: "Teting...", textColor: ConsoleColor.Green, backgroundColor: ConsoleColor.DarkBlue);
+            Console.WriteLine();
+
         }
 
 
