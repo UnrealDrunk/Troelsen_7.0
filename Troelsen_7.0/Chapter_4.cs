@@ -556,7 +556,21 @@ namespace Troelsen_7._0
                
             }
         }
-        
+
+        /// <summary>
+        /// Демонтсрация возврата заднного типа перечисления
+        /// </summary>
+        public void AskForEnumTypeStorage()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("AskForEnumTypeStorage");
+            //выбираем тип Contractor
+
+            EmpType emp = EmpType.Contractor;
+            Console.WriteLine("EmpType uses a {0} for storage", Enum.GetUnderlyingType(emp.GetType()));
+            Console.WriteLine();
+        }
+
     }
 
 
