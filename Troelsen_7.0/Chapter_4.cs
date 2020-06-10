@@ -575,7 +575,21 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонстрация наименования переменной перечислителя с помощью метода ToString()
+        /// </summary>
+        public void EmpToString()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("EmpToString");
+            EmpType emp = EmpType.Contractor;
+            AskForBonus(emp);
 
+            //выводим в консоль сообщение о том, какая должность зшита в переменную emp
+
+            Console.WriteLine("emp is a {0}", emp.ToString());
+            Console.WriteLine();
+        }
 
     }
 
