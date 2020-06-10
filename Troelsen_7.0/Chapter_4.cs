@@ -644,6 +644,62 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Структура "точка"
+        /// </summary>
+        private struct Point
+        {
+            // Поля структуры
+            public int X;
+            public int Y;
+
+            /// <summary>
+            /// Инкрементация точек
+            /// </summary>
+            public void Increment()
+            {
+                X++; Y++;
+            }
+
+            /// <summary>
+            /// Декрементация точек
+            /// </summary>
+            public void Decrement()
+            {
+                X--; Y--;
+            }
+
+            /// <summary>
+            /// Вывод информации на печать
+            /// </summary>
+            public void Display()
+            {
+                Console.WriteLine("X = {0}, Y = {1}", X, Y);
+            }
+
+        }
+
+        /// <summary>
+        /// Демонстрация работы с типом данных "Структура"
+        /// </summary>
+        public void ExecuteStructPoint()
+        {
+            //Инициализируем новую точку
+
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ExecuteStructPoint");
+            Point myPoint;
+            myPoint.X = 349;
+            myPoint.Y = 76;
+            myPoint.Display();
+
+            //Перенанстроить параметры 
+            myPoint.Increment();
+            myPoint.Display();
+            Console.WriteLine();
+
+        }
+
     }
 
 
