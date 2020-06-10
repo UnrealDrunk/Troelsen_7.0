@@ -591,6 +591,19 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонстрация возврата порядкового номера перечислителя
+        /// </summary>
+        public void DiscoverEnomerationGivenVariable()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("DiscoverEnomerationGivenVariable");
+            EmpType emp = EmpType.Contractor;
+            Console.WriteLine("{0} = {1}", emp.ToString(), (byte)emp);
+            Console.WriteLine();
+
+        }
+
     }
 
 

@@ -184,6 +184,7 @@ namespace Troelsen_7._0
             chapter_4.ExecuteAskForBonus();
             chapter_4.AskForEnumTypeStorage();
             chapter_4.EmpToString();
+            chapter_4.DiscoverEnomerationGivenVariable();
         }
 
 
