@@ -654,6 +654,17 @@ namespace Troelsen_7._0
             public int Y;
 
             /// <summary>
+            /// Кнструктор структуры "Точка"
+            /// </summary>
+            /// <param name="Xpos">Значение точки Х</param>
+            /// <param name="Ypos">Значение точки Y</param>
+            public Point(int Xpos, int Ypos)
+            {
+                X = Xpos;
+                Y = Ypos;
+            }
+
+            /// <summary>
             /// Инкрементация точек
             /// </summary>
             public void Increment()
@@ -699,6 +710,20 @@ namespace Troelsen_7._0
             Console.WriteLine();
 
         }
+
+        /// <summary>
+        /// Демонстрация работы кастомного конструктора структуры
+        /// </summary>
+        public void ExecuteCustomStructPoint()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ExecuteCustomStructPoint");
+            Point p2 = new Point(50, 60);
+            p2.Display();
+            Console.WriteLine();
+        }
+
+
 
     }
 

@@ -187,6 +187,8 @@ namespace Troelsen_7._0
             chapter_4.DiscoverEnomerationGivenVariable();
             chapter_4.PrintEachNameValuePairWithinEnumeration();
             chapter_4.ExecuteStructPoint();
+            chapter_4.ExecuteCustomStructPoint();
+            //
 
         }
 
