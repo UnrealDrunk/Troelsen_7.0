@@ -564,12 +564,18 @@ namespace Troelsen_7._0
         {
             Console.WriteLine("Chapter 4");
             Console.WriteLine("AskForEnumTypeStorage");
-            //выбираем тип Contractor
+            //извлекаем тип Contractor
 
             EmpType emp = EmpType.Contractor;
             Console.WriteLine("EmpType uses a {0} for storage", Enum.GetUnderlyingType(emp.GetType()));
+            Console.WriteLine("...");
+            //Извлекаем тип Contractor с помощью typeof (другой вариант извлечениея)
+            Console.WriteLine("EmpType uses a {0} for storage", Enum.GetUnderlyingType(typeof(EmpType)));
             Console.WriteLine();
+
         }
+
+
 
     }
 
