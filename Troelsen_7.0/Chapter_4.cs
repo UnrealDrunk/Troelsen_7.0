@@ -604,6 +604,46 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Демонтсрация вывода на печать всех пар "имя - значение" для перечислителя
+        /// </summary>
+        public void PrintEachNameValuePairWithinEnumeration()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("PrintEachNameValuePairWithinEnumeration");
+            EmpType e2 = EmpType.Contractor;
+            SetEachNameValuePairWithinEnumeration(e2);
+            Console.WriteLine("...");
+            DayOfWeek day = DayOfWeek.Monday;
+            SetEachNameValuePairWithinEnumeration(day);
+            Console.WriteLine("...");
+            ConsoleColor cc = ConsoleColor.Gray;
+            SetEachNameValuePairWithinEnumeration(cc);
+            Console.WriteLine();
+
+        }
+
+        /// <summary>
+        /// Формирование для вывода на печать пар "имя - значение" для перечислителя
+        /// </summary>
+        /// <param name="e">переменная перечислений</param>
+        private static void SetEachNameValuePairWithinEnumeration(System.Enum e)
+        {
+            Console.WriteLine("=> Information about {0}", e.GetType().Name );
+            Console.WriteLine("Underlying storage type: {0}", Enum.GetUnderlyingType(e.GetType()));
+            // Получить все пары "имя - значение" для входящего параметра
+
+            Array enumData = Enum.GetValues(e.GetType());
+            Console.WriteLine("This enum has {0} members", enumData.Length);
+
+            // Выводим имя строки и ассоциированный с ней номер, исользуя D формат
+            for (int i = 0; i < enumData.Length; i++)
+            {
+                Console.WriteLine("Name: {0}, Value: {0:D}", enumData.GetValue(i));
+            }
+
+        }
+
     }
 
 
