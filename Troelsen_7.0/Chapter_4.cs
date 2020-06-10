@@ -723,7 +723,27 @@ namespace Troelsen_7._0
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Демонтрация особенностей работы с разными экземплярами одной структуры. Особенности работы с памятью
+        /// </summary>
+        public void AssigningStructValueTypes()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("AssigningValueTypes");
+            Point p1 = new Point(10, 10);
+            Point p2 = p1;
+            //выводим значения обеих структур на печать
+            p1.Display();
+            p2.Display();
 
+            //Изменяем занчение p1
+            p1.X = 100;
+            Console.WriteLine("\n=> Changed p1.X \n");
+            p1.Display();
+            p2.Display();
+            Console.WriteLine();
+
+        }
 
     }
 
