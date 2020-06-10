@@ -189,6 +189,7 @@ namespace Troelsen_7._0
             chapter_4.ExecuteStructPoint();
             chapter_4.ExecuteCustomStructPoint();
             chapter_4.AssigningStructValueTypes();
+            chapter_4.ReferenceTypeAssigment();
             //
 
         }

@@ -745,6 +745,73 @@ namespace Troelsen_7._0
 
         }
 
+        /// <summary>
+        /// Класс "точка" 2D
+        /// </summary>
+        private class PointRef
+        {
+            // Поля класса
+            public int X;
+            public int Y;
+
+            /// <summary>
+            /// Кнструктор класса "Точка"
+            /// </summary>
+            /// <param name="Xpos">Значение точки Х</param>
+            /// <param name="Ypos">Значение точки Y</param>
+            public PointRef(int Xpos, int Ypos)
+            {
+                X = Xpos;
+                Y = Ypos;
+            }
+
+            /// <summary>
+            /// Инкрементация точек
+            /// </summary>
+            public void Increment()
+            {
+                X++; Y++;
+            }
+
+            /// <summary>
+            /// Декрементация точек
+            /// </summary>
+            public void Decrement()
+            {
+                X--; Y--;
+            }
+
+            /// <summary>
+            /// Вывод информации на печать
+            /// </summary>
+            public void Display()
+            {
+                Console.WriteLine("X = {0}, Y = {1}", X, Y);
+            }
+        }
+
+        /// <summary>
+        /// Демонтрация особенностей работы с разными экземплярами одного класса. Особенности работы с памятью
+        /// </summary>
+        public void ReferenceTypeAssigment()
+        {
+            Console.WriteLine("Chapter 4");
+            Console.WriteLine("ReferenceTypeAssigment");
+            PointRef p1 = new PointRef(10, 10);
+            PointRef p2 = p1;
+            //выводим значения обоих экземпляров класса на печать
+            p1.Display();
+            p2.Display();
+
+            //Изменяем занчение экземпляра класса p1
+            p1.X = 100;
+            Console.WriteLine("\n=> Changed p1.X \n");
+            p1.Display();
+            p2.Display();
+            Console.WriteLine();
+        }
+
+
     }
 
 
